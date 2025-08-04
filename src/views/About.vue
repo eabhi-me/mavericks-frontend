@@ -11,7 +11,7 @@
         <div class="row min-vh-60 align-items-center">
           <div class="col-12 text-center">
             <div class="hero-content text-white">
-              <div class="hero-badge mb-3">
+              <div class="hero-badge mb-3 pt-4">
                 <span class="badge bg-primary-gradient px-4 py-2 rounded-pill">
                   <i class="fas fa-robot me-2"></i>SLIET Robotics Club
                 </span>

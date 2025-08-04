@@ -9,10 +9,10 @@
             among students through hands-on projects and collaborative learning.
           </p>
           <div class="social-links">
-            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com/mavericks.sliet" class="social-link"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com/mavericks_sliet?igshid=NTdlMDg3MTY=" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/team-mavericks/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
             <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
@@ -37,11 +37,11 @@
             </li>
             <li class="contact-item">
               <i class="fas fa-phone contact-icon"></i>
-              <span>+91 98765 43210</span>
+              <span>+91 ___________</span>
             </li>
             <li class="contact-item">
               <i class="fas fa-envelope contact-icon"></i>
-              <span>info@mavericks.com</span>
+              <span>maverick@sliet.ac.in</span>
             </li>
           </ul>
         </div>
