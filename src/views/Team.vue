@@ -52,10 +52,12 @@
               <div class="col-lg-3 col-md-6" v-for="(member, index) in currentMembers" :key="index">
                 <div class="member-card text-center">
                   <div class="member-image mb-3">
-                    <img :src="member.img_url" :alt="member.name" class="rounded-circle" width="200" height="200">
+                    <img :src="member.img_url || '/images/team-img/profile.png'" :alt="member.name" class="rounded-circle" width="200" height="200">
                     <div class="member-overlay">
                       <div class="member-social">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a v-if="member.linkedin" :href="member.linkedin" class="social-link" target="_blank">
+                          <i class="fab fa-linkedin"></i>
+                        </a>
                         <a href="#" class="social-link"><i class="fab fa-github"></i></a>
                         <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
                       </div>
@@ -75,10 +77,36 @@
               <div class="col-lg-3 col-md-6" v-for="(member, index) in batch25Members" :key="index">
                 <div class="member-card text-center">
                   <div class="member-image mb-3">
-                    <img :src="member.img_url" :alt="member.name" class="rounded-circle" width="200" height="200">
+                    <img :src="member.img_url || '/images/team-img/profile.png'" :alt="member.name" class="rounded-circle" width="200" height="200">
                     <div class="member-overlay">
                       <div class="member-social">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a v-if="member.linkedin" :href="member.linkedin" class="social-link" target="_blank">
+                          <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <h5 class="mb-1">{{ member.name }}</h5>
+                  <p class="text-muted small">{{ member.branch }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Batch 2026 -->
+          <div class="tab-pane fade" :class="{ 'show active': activeTab === 'batch26' }" id="batch26" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-lg-3 col-md-6" v-for="(member, index) in batch26Members" :key="index">
+                <div class="member-card text-center">
+                  <div class="member-image mb-3">
+                    <img :src="member.img_url || '/images/team-img/profile.png'" :alt="member.name" class="rounded-circle" width="200" height="200">
+                    <div class="member-overlay">
+                      <div class="member-social">
+                        <a v-if="member.linkedin" :href="member.linkedin" class="social-link" target="_blank">
+                          <i class="fab fa-linkedin"></i>
+                        </a>
                         <a href="#" class="social-link"><i class="fab fa-github"></i></a>
                         <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
                       </div>
@@ -92,16 +120,18 @@
             </div>
           </div>
 
-          <!-- Batch 2026 -->
-          <div class="tab-pane fade" :class="{ 'show active': activeTab === 'batch26' }" id="batch26" role="tabpanel">
+          <!-- Batch 2027 -->
+          <div class="tab-pane fade" :class="{ 'show active': activeTab === 'batch27' }" id="batch27" role="tabpanel">
             <div class="row g-4">
-              <div class="col-lg-3 col-md-6" v-for="(member, index) in batch26Members" :key="index">
+              <div class="col-lg-3 col-md-6" v-for="(member, index) in batch27Members" :key="index">
                 <div class="member-card text-center">
                   <div class="member-image mb-3">
-                    <img :src="member.img_url" :alt="member.name" class="rounded-circle" width="200" height="200">
+                    <img :src="member.img_url || '/images/team-img/profile.png'" :alt="member.name" class="rounded-circle" width="200" height="200">
                     <div class="member-overlay">
                       <div class="member-social">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a v-if="member.linkedin" :href="member.linkedin" class="social-link" target="_blank">
+                          <i class="fab fa-linkedin"></i>
+                        </a>
                         <a href="#" class="social-link"><i class="fab fa-github"></i></a>
                         <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
                       </div>
@@ -109,7 +139,7 @@
                   </div>
                   <h5 class="mb-1">{{ member.name }}</h5>
                   <p class="text-primary mb-2">{{ member.designation }}</p>
-                  <p class="text-muted small">{{ member.batch }} | {{ member.branch }}</p>
+                  <p class="text-muted small">{{ member.branch }}</p>
                 </div>
               </div>
             </div>
@@ -134,7 +164,6 @@
                   <h5 class="mb-1">{{ member.name }}</h5>
                   <p class="text-primary mb-2">{{ member.status }}</p>
                   <p class="text-muted small">{{ member.branch }}</p>
-                  <p class="text-muted small">Reg: {{ member.RegistrationNumber }}</p>
                 </div>
               </div>
             </div>
@@ -244,6 +273,7 @@ export default {
       { id: 'current', name: 'Current Members' },
       { id: 'batch25', name: 'Batch 2025' },
       { id: 'batch26', name: 'Batch 2026' },
+      { id: 'batch27', name: 'Batch 2027' },
       { id: 'diploma', name: 'Diploma Members' },
       { id: 'alumni', name: 'Alumni' }
     ]

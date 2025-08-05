@@ -69,6 +69,9 @@
         <div class="col-md-6 text-md-end">
           <p class="footer-copyright">
             Made with <i class="fas fa-heart heart-icon"></i> by Team Mavericks
+            <a href="https://github.com/eabhi-me" target="_blank" class="ms-2" title="Connect with Developer">
+              <i class="fab fa-github"></i> Developer
+            </a>
           </p>
         </div>
       </div>

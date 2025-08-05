@@ -239,6 +239,13 @@ export default {
         secondaryButton: { text: "View Events", link: "/gallery" }
       },
       {
+        image: "https://res.cloudinary.com/dhr8bs4xg/image/upload/v1745911380/Picsart_25-01-30_22-05-49-726_ngvrvz.jpg",
+        title: "Welcome to Team Mavericks",
+        description: "A premier robotics club dedicated to fostering innovation, creativity, and technical excellence among students through hands-on projects and collaborative learning.",
+        primaryButton: { text: "Learn More", link: "/about" },
+        secondaryButton: { text: "View Projects", link: "/projects" }
+      },
+      {
         image: "/images/mav-banner.png",
         title: "Welcome to Team Mavericks",
         description: "A premier robotics club dedicated to fostering innovation, creativity, and technical excellence among students through hands-on projects and collaborative learning.",
@@ -295,18 +302,25 @@ export default {
 
     const facultyAdvisors = [
       {
-        name: 'Dr. J.S. Ubhi',
-        designation: 'Head of Department',
-        department: 'Computer Science & Engineering',
-        qualification: 'Ph.D. in Computer Science',
-        image: '/images/Dr. J.S. Ubhi-modified.png'
+        name: 'Prof. Mani Kant Paswan',
+        designation: 'Director, SLIET',
+        department: 'Director',
+        qualification: '', 
+        image: '/images/MKPaswan-150x150.jpg'
       },
       {
         name: 'Prof. M.M. Sinha',
-        designation: 'Assistant Professor',
-        department: 'Electronics & Communication',
-        qualification: 'M.Tech in Electronics',
+        designation: 'Dean(Student Welfare)',
+        department: 'Dean(Student Welfare)',
+        qualification: '',
         image: '/images/MM Sinha.png'
+      },
+      {
+        name: 'Dr. J.S. Ubhi',
+        designation: 'Faculty Advisor',
+        department: 'Electronics and Communication Engineering',
+        qualification: '',
+        image: '/images/Dr. J.S. Ubhi-modified.png'
       }
     ]
 
